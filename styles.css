@@ -1,0 +1,32 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* manifest.json */
+{
+  "manifest_version": 3,
+  "name": "多语言博客翻译助手",
+  "version": "1.0",
+  "description": "自动翻译博客后台英文Markdown内容并填充",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
